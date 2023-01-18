@@ -45,7 +45,7 @@ Console.WriteLine($"Sum of digits in number {number} = {SumOfDigits(number)}");
 /* Задача 29: 
 
 Напишите программу, которая задаёт массив из m элементов и выводит их на экран.
-*/
+
 
 int[] CreateRandomArray(int size, int minVal, int maxVal)
 {
@@ -72,3 +72,35 @@ int maxV = Convert.ToInt16(Console.ReadLine());
 
 int[] newArr = CreateRandomArray(number,minV,maxV);
 WriteArray(newArr);
+
+*/
+
+/* Задача 29: вариант 2.
+
+Можно и так, но меньше контроля за массивом 
+
+int[] CreateRandomArray(int size)
+{
+    int[] array = new int[size];
+
+    for(int i = 0; i < size; i++)
+    {
+        array[i] = new Random().Next();
+    }
+    return array;
+}
+
+void WriteArray( int[] array)
+{
+    for(int i = 0; i < array.Length; i++) Console.Write(array[i]+"  ");
+    Console.WriteLine();
+}
+
+
+Console.Write("Input number of array elements: ");
+int number = Convert.ToInt16(Console.ReadLine());
+
+int[] newArr = CreateRandomArray(number);
+WriteArray(newArr);
+
+*/
