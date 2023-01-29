@@ -132,7 +132,7 @@ int row = Convert.ToInt16(Console.ReadLine());
 Console.Write("Input number columns in array: ");
 int col = Convert.ToInt16(Console.ReadLine());
 Console.Write("Input minimum value: ");
-int minV = Convert.ToInt32(Console.ReadLine());
+int minV = Convert.ToUInt32(Console.ReadLine());
 Console.Write("Input maximum value: ");
 int maxV = Convert.ToInt32(Console.ReadLine());
 
